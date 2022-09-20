@@ -1,0 +1,36 @@
+Start a new django project
+1. create a new directory
+2. install a venv CMD --> python3 -m venv venv
+3. activate the venv CMD --> source venv/bin/activate
+4. install django CMD --> pip3 install django
+5. configure files CMD --> django-admin startproject config .
+6. migrate files CMD -- > manage.py migrate
+7. run the server CMD --> python3 manage.py runserver
+
+
+See the available django commands:
+1. CMD --> django-admin
+
+
+
+Enter the django help command:
+1. CMD --> django-admin
+
+
+Create a new user:
+1. CMD --> python3 manage.py createsuperuser
+2. view the user page CMD --> 127.0.1:8000/admin/ (whatever port is on your terminal)
+
+
+Add a new App:
+1. open venv CMD--> source venv/bin/activate
+2. add new app CMD--> python3 manage.py startapp <appname>
+3. open vs code CMD--> code .
+4. open settings.py
+5. add <appname> to INSTALLED_APPS with trailing comma
+6. add template file in 'DIRS' [str(BASE_DIR.joinpath('templates'))]
+7. add static root and static files
+	STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
+	STATICFILES_DIRS = [str(BASE_DIR.joinpath('static'))]
+8. Create new folder static and templates
+

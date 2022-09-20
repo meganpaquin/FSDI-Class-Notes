@@ -1,0 +1,15 @@
+
+add a PIP framework for Python
+	pip3 --version
+	$navigate with CD to file
+	python3 -m pip virtualenv
+	### sets up the folder to contain the framework instead of the OS
+	python3 -m venv venv 
+	## add the virtual environment folder
+	
+
+install mongoDB onto python app
+	exit venv
+	python3 -m pip install flask-pymongo pymongo "pymongo[srv]" certifi
+	
+	

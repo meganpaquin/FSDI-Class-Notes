@@ -1,0 +1,13 @@
+Create a new react app
+1. CMD--> npx create-react-app {name}
+2. start server CMD--> npm start
+3. stop server ctrl+c
+4. reinstall node packages from github download CMD--> npm install
+
+install npm Route Package for LINKS
+1. CMD--> npm i -s react-router-dom
+
+install axios for HTTP requests
+1. CMD--> npm install axios
+
+

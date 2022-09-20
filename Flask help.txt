@@ -1,0 +1,29 @@
+Install flask:
+1. create a venv CMD--> python3 -m venv venv
+2. activate the venv CMD--> source venv/bin/activate
+3. install flask CMD--> pip3 install flask
+
+
+Remove a VENV
+1. CMD--> rm -rf venv
+2. reinstall venv CMD--> python3 -m venv venv
+
+
+Create a venv requirements file
+1. CMD--> pip3 freeze > requirements.txt
+2. install all packages from a txt file CMD--> pip3 install -r requirements.txt
+
+
+
+Run server on flask
+1. CMD --> export FLASK_APP=<path where app is declared>
+2. CMD --> export FLASK_ENV=development
+3. CMD --> flask run
+
+Run from a .sh file
+1. create the .sh file with the commands above
+2. CMD--> sh <filename fro mabove>.sh
+
+
+
+

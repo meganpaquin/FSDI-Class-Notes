@@ -1,0 +1,54 @@
+npx create-react-app {name}
+
+Open the project in the server
+	npm start
+Stop the project
+	ctrl + C
+
+open VSC from terminal
+	navigate to folder then
+	code .
+
+add a node_module
+	npm install -s {name of node}
+
+
+add a PIP framework for Python
+	pip3 --version
+	$navigate with CD to file
+	python3 -m pip virtualenv
+	### sets up the folder to contain the framework instead of the OS
+	python3 -m venv venv 
+	## add the virtual environment folder
+	
+	## activate the virtual environment (must do this every time)
+	source venv/bin/activate
+	
+	## verify that it is active (VENV) before the file name
+	
+	##deactivate virtual environment at the end of working
+	deactivate
+	
+	
+install npm Route package
+	npm i -s react-router-dom
+
+re-install node packages
+	npm install
+
+
+install axios for HTTP requests in React
+	npm install axios
+	
+initiate virtual env for python
+	source venv/bin/activate
+
+enter debug mode for python
+	flask --app [filename] --debug run
+	
+	
+install mongoDB onto python app
+	exit venv
+	python3 -m pip install flask-pymongo pymongo "pymongo[srv]" certifi
+	
+	

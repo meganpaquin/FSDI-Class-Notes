@@ -1,0 +1,48 @@
+Create a new folder called whatever
+open the folder with CMD--> CD <drag folder here>
+
+Steps in Terminal:
+
+1. create a venv CMD--> python3 -m venv venv
+2. activate the venv CMD--> source venv/bin/activate
+3. install flask CMD--> pip3 install flask
+4. install sqlite3 CMD--> sudo apt install sqlite3
+5. create requirements CMD--> pip3 freeze > requirements.txt
+6. create routes.py CMD--> touch routes.py
+7. create gitignore CMD--> touch .gitignore
+8. create database module CMD--> mkdir -p app/database
+9. create databse module CMD--> touch app/database/__init__.py
+10. create databse module CMD--> touch app/database/database.py
+11. create a routes CMD--> touch routes.py
+12. create a template folder CMD--> mkdir -p app/templates
+12. create a database CMD--> sqlite3 database.db
+13. open vs code CMD--> code .
+
+Steps in VS Code:
+1. fill in .gitignore file
+	contents:
+		venv 
+		*__pycache__*
+2. fill in run_dev.sh file
+	contents:
+		export FLASK_APP=app/routes.py
+		export FLASK_ENV=development 
+		flask run -p 5000
+3. fill in routes.py
+	contents:
+		from flask import (Flask, render_template, request)
+		app = Flask(__name__)
+		from app.database import database
+4. fill in __init__.py for database file
+	contents:
+		from flask import g
+		import sqlite3
+		DATABASE_URL="database.db"
+		def get_db():
+		    db = getattr(g, "_database", None)
+		    if not db:
+			db = g._database = sqlite3.connect(DATABASE_URL)
+		    return db
+5. fill in database.py
+	contents:
+		from app.database import get_db			    

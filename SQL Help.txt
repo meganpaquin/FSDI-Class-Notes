@@ -1,0 +1,10 @@
+Setup sqlite3
+1. open venv CMD--> source venv/bin/activate
+2. download into venv CMD--> sudo apt install sqlite3
+3. create new db CMD--> sqlite3 <dbname>.db
+	*** if it already exists this same command will open it up ***
+
+
+Exit the sqlite3 terminal
+	ctrl+D
+

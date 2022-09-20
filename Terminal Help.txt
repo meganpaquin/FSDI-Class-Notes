@@ -1,0 +1,18 @@
+Update and Upgrade computer
+1. CMD--> sudo apt-get update
+2. CMD--> sudo apt-get upgrade
+3. CMD--> sudo reboot
+
+Basic Commands
+1. see which filepath you are currently in CMD--> pwd
+2. see which files are in the current folder CMD--> ls
+3. go into a folder CMD--> CD <filepath>
+4. return back one folder level CMD--> CD ../
+5. make a new folder CMD--> mkdir <file name>
+6. make a new file CMD--> touch <document name>
+7. remove a file or folder CMD--> rm <document or file name>
+8. put data into a file CMD--> echo <data you want to send> >> <file name>
+	ex: echo "hello world" >> myfile.txt
+9. run as an administrator CMD--> sudo <whatever command you are running>
+10. open VSCode CMD--> code .
+

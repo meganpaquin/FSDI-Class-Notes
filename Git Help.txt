@@ -1,0 +1,33 @@
+Setup a new SSH Key for Github:
+1. open venv CMD--> sourcer venv/bin/activate
+2. create a unique key CMD --> ssh-keygen
+3. navigate to new file CMD--> cat id_rsa.pub
+4. copy results and paste into github SSH manager
+
+
+Create GIT from the command line:
+1. Open the venv CMD--> source venv/bin/activate
+2. initialize the git project CMD--> git init
+3. check the status CMD--> git status
+4. make changes ready to commit CMD--> git add -A
+5. commit the changes CMD--> git commit -m "comment"
+	** So far this is all a local git log on your computer **
+6. create a new repo on Github
+7. select SSH and copy "...or push an existing repo from the command line"
+	*** should be 3 lines of code ***
+8. paste code into terminal
+	*** after the github link is created push with CMD--> git push
+
+
+If the Github repo already exists and doesn't show the SSH window
+1. open the repo
+2. select the green code button
+3. make sure SSH is selected and copy github link 
+4. link through terminal the CMD--> git remote add origin <link from above>
+5. git push -u origin main
+
+
+See the git log and status
+1. log CMD--> git log
+2. status CMD--> git status
+
